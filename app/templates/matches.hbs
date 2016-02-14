@@ -1,0 +1,8 @@
+{{#each model as |match| }}
+<p>
+  {{match.player1}} vs {{match.player2}}
+
+  {{match.player1Score}} to {{match.player2Score}}
+</p>
+{{/each}}
+{{outlet}}
