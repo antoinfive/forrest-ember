@@ -7,5 +7,7 @@ export default DS.Model.extend({
   numPlayers: DS.attr('number'),
   winner: DS.attr('number'),
   startDate: DS.attr('date'),
-  endDate: DS.attr('date')
+  endDate: DS.attr('date'),
+  user: DS.hasMany('user'),
+  match: DS.hasMany('match')
 });
